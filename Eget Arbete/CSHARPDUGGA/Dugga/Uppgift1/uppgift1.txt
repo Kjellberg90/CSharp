@@ -1,0 +1,9 @@
+﻿1A. Skapa en klass med namn Person. (1p)
+
+1B. Klassen Person ska ha två fält. Ett för personens förnamn och ett för
+efternamnet. Båda fälten ska vara av typen string. Inget av fälten ska gå att
+nå utanför klassen. (1p)
+
+1C. Klassen Person ska ha en konstruktor som tar in två parametrar av typen
+string. Konstruktorn ska använda parametrarna för att sätta värden ppå de
+två fälten. Konstruktorn ska vara publikt tillgänglig. (1p)

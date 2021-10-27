@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The_Magic_Cannon", "The_Magic_Cannon\The_Magic_Cannon.csproj", "{BDDAA461-9DD6-46C9-8FC9-C4FC196BC41D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDDAA461-9DD6-46C9-8FC9-C4FC196BC41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDDAA461-9DD6-46C9-8FC9-C4FC196BC41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDDAA461-9DD6-46C9-8FC9-C4FC196BC41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDDAA461-9DD6-46C9-8FC9-C4FC196BC41D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA9E7DB2-8B65-4344-A05B-655212258A75}
+	EndGlobalSection
+EndGlobal

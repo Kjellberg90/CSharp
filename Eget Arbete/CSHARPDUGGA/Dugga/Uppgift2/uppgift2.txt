@@ -1,0 +1,11 @@
+﻿2A. Lägg till en konstruktor i klassen Apartment som sätter fältet _floor
+till 0. Konstruktorn ska vara publikt tillgänglig. (1p)
+
+2B. Lägg till en property i klassen Apartment som heter Floor. Property:n ska
+vara get-only och returnera värdet på fältet _floor. Det ska alltså inte gå att
+sätta om värdet på den utan bara läsa värdet. Property:n ska vara publikt
+tillgänglig. (1p)
+
+2C. Lägg till en property i klassen Apartment som heter Number. Property:n ska
+använda auto-implementing-syntaxen (det ska alltså inte finnas något backing 
+field) och vara get-only. (1p)

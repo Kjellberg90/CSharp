@@ -1,0 +1,22 @@
+﻿3A. Skapa en konstruktor i klassen CreditCard som inte tar några
+parametrar. Den nya konstruktorn ska anropa den befintliga konstruktorn
+och sätta parametern till "bronze". Konstruktorn ska vara publikt tillgänglig.
+(1p)
+
+3B. Skapa en metod i CreditCard som heter ChangeLimit. Metoden ska ta en
+parameter av typen int. Metoden ska inte returnera någonting.
+Metoden ska vara tillgänglig publikt. (3p)
+
+Metoden ska göra två saker:
+ 1. Sätta om värdet på _creditLimit till värdet i parametern
+ 2. Beräkna ett nytt värde för _benefitLevel. Enligt följande villkor:
+   * Om _creditLimit är lägre än eller lika med 10 000 ska värdet vara "bronze"
+   * Om _creditLimit är större än 10 000 och mindre eller lika med 50 000
+      ska värdet vara "silver"
+   * Om _creditLimit är större än 50 000 ska värdet vara "gold"
+
+3C. Skapa en enum för kreditnivån som innehåller "bronze", "silver" och "gold".
+(1p)
+
+3D. Byt typ på _benefitLevel så att den använder enum:en du skapade i 3C.
+Byt både i deklarationen och där variabeln används. (1p)

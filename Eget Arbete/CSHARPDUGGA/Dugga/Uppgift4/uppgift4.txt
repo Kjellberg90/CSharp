@@ -1,0 +1,14 @@
+﻿4A. Skapa en metod i klassen MultiGreeter som heter SayHello.
+Metoden ska ta in två parametrar. Den första ska vara en sträng (message) och
+den andra ska vara en int (count). Metoden ska inte returnera någonting.
+Metoden ska vara tillgänglig publikt. (1p)
+
+4B. Skriv kod i SayHello-metoden så att den skriver ut texten i variabeln
+message lika många gånger som värdet på variabeln count. Med "skriv ut" menar
+vi att du ska skriva till console:en. (1p)
+
+Ex: Om message = "hej" och count = 4 så ska metoden skriva ut:
+hej
+hej
+hej
+hej

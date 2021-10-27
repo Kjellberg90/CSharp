@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The_Four_Sisters_And_The_Duckbear", "The_Four_Sisters_And_The_Duckbear\The_Four_Sisters_And_The_Duckbear.csproj", "{DB047290-53CD-45CD-B174-98BBDB829021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB047290-53CD-45CD-B174-98BBDB829021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB047290-53CD-45CD-B174-98BBDB829021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB047290-53CD-45CD-B174-98BBDB829021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB047290-53CD-45CD-B174-98BBDB829021}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A238C78-6572-4262-B6EA-C22657CCE79F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+﻿Denna uppgift innehåller teoretiska frågor. Skriv ditt svar under
+strecket ("-----") men innan nästa delfråga.
+
+
+
+8A. Anta att vi ska skriva en metod som tar in en (1) parameter. Parametern
+förväntas ha en av fyra värden (vinter, vår, sommar, höst). Vilken datatyp vore
+bäst att använda för den här parametern (string, int, eller en enum)?
+Motivera ditt val för att få full poäng. (2p)
+-----
+
+ENUM vore det bästa.
+
+Enom ger oss en bra möjlighet att definiera en samling värden som vi i sin tur kan använda som giltig variabel.
+Efter att enument har blivit skapat kan vi vara säkra på att värder i enumet är ett av värdena vi vill använda oss av.
+Vilket skapar en större tydlighet i våran kod. tydlighet 
+
+8B. Följande kodsnutt kommer inte skriva ut texten inne i if:en. Varför blir
+inte uttrycket i villkoret sant? (1p)
+
+int[] a = new int[] { 1 };
+int[] b = new int[] { 1 };
+if (a == b)
+{
+  Console.WriteLine("Matched!");
+}
+-----
+ANledningen till att inte texten i IF:en skrivs ut är för att arrayerna är av 
+referenstyp och inte av value typ. Referensvariablen skapar en kopia av referensen och inte av värdet.
+Därför fungerar inte kommer IF:en att skriva ut "Matched"
+
+
+
+8C. Givet följande klasser och kodsnutt kommer texten "PARENT" skrivas ut.
+Varför skrivs "PARENT" ut istället för "CHILD"? Vad kan vi göra för att ändra
+detta? (2p)
+
+class Parent {
+	public void Hej() {
+		Console.WriteLine("PARENT");
+	}
+}
+class Child : Parent {
+	public void Hej() {
+		Console.WriteLine("CHILD");
+	}
+}
+
+Parent p = new Child();
+p.Hej();
+------
+

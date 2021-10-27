@@ -1,0 +1,9 @@
+﻿6A. Skapa en abstract klass som heter Computation. (1p)
+
+6B. Skapa en abstract metod i klassen Computation. Metoden ska heta Compute och
+den ska gå att nå från ärvande klasser men inte utifrån. Metoden ska ta två
+parametrar av typen int och returnera en int. (1p)
+
+6C. Skapa en klass som heter AdditionComputation. Klassen ska ärva från den
+abstracta klassen Computation. Implementationen av den abstracta metoden ska
+addera de två värdena som skickas till metoden och returnera summan. (2p)

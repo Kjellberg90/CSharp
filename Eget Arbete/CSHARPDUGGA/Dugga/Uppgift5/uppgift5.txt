@@ -1,0 +1,14 @@
+﻿5A. Skapa en metod i klassen IntsToArray som heter ToArray. Metoden ska vara
+publikt tillgänglig. Metoden ska vara static. Metoden ska ta tre
+int-parametrar och returnera en int-array. (1p)
+
+5B. Skriv kod i ToArray-metoden från 5A som skapar en en int-array av längd 3.
+Fyll array:en med värdena från int-parametrarna. Tre parametrar till de tre
+positionerna i array:en. (1p)
+
+5C. Skapa en metod i klassen IntsToArray som heter PrintArray. Metoden ska vara
+publikt tillgänglig. Metoden ska vara static. Metoden ska ta en (1) parameter
+som ska vara av typen int-array. Metoden returnerar ingenting. (1p)
+
+5D. Skriv kod i PrintArray-metoden som skriver ut alla värden i array:en soom
+skickats in som parameter. Du ska alltså skriv ut värdena till console:en. (1p)

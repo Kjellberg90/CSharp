@@ -1,0 +1,8 @@
+﻿7A. Skapa ett interface som heter IPositionable (1p)
+
+7B. Lägg till två get-only properties i interface:et IPositionable. Både
+två ska vara av typen int. Namnge dem X och Y. (1p)
+
+7C. Lägg till en metod i interface:et IPositionable. Metoden ska returnera
+string och ta in två parametrar. Den första parametern ska vara av typen int
+och den andra parametern ska vara av typen bool. (1p)
