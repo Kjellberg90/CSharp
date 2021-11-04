@@ -18,7 +18,6 @@ namespace Packing_Inventory
         public double CurrentVolume { get; set; }
         public int CurrentItem { get; set; }
 
-        public int MyProperty { get; set; }
         public Pack(double maxWeight, double maxVolume,int maxNumberOfItems)
         {
             MaxWeight = maxWeight;
