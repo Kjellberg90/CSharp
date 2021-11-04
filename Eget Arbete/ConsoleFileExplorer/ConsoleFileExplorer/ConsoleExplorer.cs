@@ -11,24 +11,24 @@ namespace ConsoleFileExplorer
     {
 
         private int currentIndex;
+
+
         public void Run()
         {
-            string[] directoryArray = Directory.GetFileSystemEntries(".");
-            for (int i = 0; i < directoryArray.Length; i++)
-            {
-                if (File.Exists(directoryArray[i]))
-                {
-                    Console.WriteLine($"- {Path.GetFileName(directoryArray[i])}");
-                }
-                else
-                {
-                Console.WriteLine($"# {Path.GetFileName(directoryArray[i])}");
-                }
-            }
+            FolderView folderView = new FolderView();
             while (true)
             {
-                
-                
+                folderView.printList(currentIndex);
+
+                var input = Console.ReadKey().Key;
+                if (input == ConsoleKey.W)
+                {
+                    currentIndex = folderView.Up(input, currentIndex);
+                }
+                if (input == ConsoleKey.S)
+                {
+                    currentIndex = folderView.Down(input, currentIndex);
+                }
             }
         }
     }
