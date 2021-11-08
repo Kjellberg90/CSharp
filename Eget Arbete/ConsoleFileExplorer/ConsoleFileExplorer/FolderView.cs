@@ -10,6 +10,7 @@ namespace ConsoleFileExplorer
     internal class FolderView
     {
 
+
         public void printList(int currentIndex)
         {
             Console.Clear();
@@ -22,7 +23,7 @@ namespace ConsoleFileExplorer
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
 
                 if (File.Exists(directoryArray[i]))
@@ -62,6 +63,18 @@ namespace ConsoleFileExplorer
                 }
             }
             return currentIndex;
+        }
+
+        public void ViewFile(int currentIndex)
+        {
+            string[] directoryArray = Directory.GetFileSystemEntries(".");
+            using (StreamReader sr = new StreamReader(directoryArray[currentIndex])) 
+            {
+                Console.WriteLine($"Content of: {directoryArray[currentIndex]}");
+                Console.WriteLine("------------------------------------------}");
+                Console.WriteLine(sr.ReadToEnd());
+                
+            }
         }
 
     }

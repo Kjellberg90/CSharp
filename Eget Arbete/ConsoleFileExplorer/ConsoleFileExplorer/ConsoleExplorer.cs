@@ -9,25 +9,40 @@ namespace ConsoleFileExplorer
 {
     class ConsoleExplorer
     {
-
+        private ViewState _viewState;
         private int currentIndex;
-
 
         public void Run()
         {
             FolderView folderView = new FolderView();
             while (true)
             {
-                folderView.printList(currentIndex);
+                if (_viewState == ViewState.List)
+                {
+                    folderView.printList(currentIndex);
 
-                var input = Console.ReadKey().Key;
-                if (input == ConsoleKey.W)
-                {
-                    currentIndex = folderView.Up(input, currentIndex);
+                    var input = Console.ReadKey().Key;
+                    if (input == ConsoleKey.W)
+                    {
+                        currentIndex = folderView.Up(input, currentIndex);
+                    }
+                    if (input == ConsoleKey.S)
+                    {
+                        currentIndex = folderView.Down(input, currentIndex);
+                    }
+                    if (input == ConsoleKey.Enter)
+                    {
+                        _viewState = ViewState.FileView;
+                    }
                 }
-                if (input == ConsoleKey.S)
+                if (_viewState == ViewState.FileView)
                 {
-                    currentIndex = folderView.Down(input, currentIndex);
+                    Console.Clear();
+                    folderView.ViewFile(currentIndex);
+                    Console.WriteLine("------------------------------------------}");
+                    Console.WriteLine("Press any key to exit file");
+                    Console.ReadKey();
+                    _viewState = ViewState.List;
                 }
             }
         }
